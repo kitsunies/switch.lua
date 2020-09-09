@@ -41,10 +41,6 @@ switch.__call = function(self, v)
     c()
 end
 
-function switch.new()
-    return setmetatable({_callbacks = {}}, switch)
-end
-
 function switch:case(v, f)
     self._callbacks[v] = f
     return self
@@ -55,4 +51,6 @@ function switch:default(f)
     return self
 end
 
-return switch
+return function() 
+    return setmetatable({_callbacks = {}}, switch) 
+end)
