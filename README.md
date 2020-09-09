@@ -7,14 +7,9 @@
  
 ## Usage
 
-### Installation
-The [switch.lua](switch.lua) file should be dropped somewhere your Lua interpreter will be able to find it and required by it:
-```lua
-local switch = require 'switch'
-```
- 
 ### Switch Module
- 
+
+The [switch.lua](switch.lua) file should be dropped somewhere your Lua interpreter will be able to find it and required by it:
 ```lua
 local switch = require 'switch'
 ```
@@ -34,7 +29,7 @@ self :case(value, callback)
 ```
 Sets a case value to callback, returns the object so that it can be chained self `:default(callback)`. Sets the default callback
  
- 
+
 ## Example
 
 ```lua
@@ -56,6 +51,7 @@ local numbercase = switch()
 SpeedCase(15 + 5)
 ```
 Returns
+
 ```lua
 >>> Hello Twenty
 ```
