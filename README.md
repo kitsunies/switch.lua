@@ -48,7 +48,7 @@ local numbercase = switch()
         print("Unrecognised")
     end)
  
-SpeedCase(15 + 5)
+numbercase(15 + 5)
 ```
 Returns
 
